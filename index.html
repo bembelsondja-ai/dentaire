@@ -52,19 +52,26 @@
         <section class="statistics-bar reveal">
             <div class="stats-container">
                 <div class="stat-item">
-                    <span class="stat-number">2,400+</span>
+                    <span class="stat-number anim-stat" data-target="2400" data-format="+">0+</span>
                     <span class="stat-label">Patients</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
-                    <span class="stat-number">15 Years</span>
-                    <span class="stat-label">Experience</span>
+                    <span class="stat-number anim-stat" data-target="15" data-format="">0</span>
+                    <span class="stat-label">Years Experience</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
-                    <span class="stat-number">4.9★</span>
+                    <span class="stat-number anim-stat" data-target="4.9" data-format="★" data-float="true">0★</span>
                     <span class="stat-label">Rating</span>
                 </div>
+            </div>
+        </section>
+
+        <!-- Insurance Banner -->
+        <section class="insurance-banner reveal">
+            <div class="insurance-container" style="background:#113458; padding:1rem; text-align:center; color:white; font-size:0.95rem; width:100%;">
+                <p>We proudly accept: <strong>Delta Dental · Cigna · MetLife · Aetna</strong> · Most PPO Plans Welcome</p>
             </div>
         </section>
 
@@ -78,27 +85,86 @@
                 
                 <div class="services-grid reveal">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                        <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=800" alt="Teeth Whitening" class="service-card-img">
+                        <div class="service-info-wrap">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                            </div>
+                            <h3>Teeth Whitening</h3>
+                            <p>Professional grade whitening treatments that brighten your smile by several shades in a single, comfortable visit, using safe and effective materials.</p>
                         </div>
-                        <h3>Teeth Whitening</h3>
-                        <p>Professional grade whitening treatments that brighten your smile by several shades in a single, comfortable visit, using safe and effective materials.</p>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c-2.28 0-4-1.72-4-4s1.72-4 4-4 4 1.72 4 4-1.72 4-4 4z"></path><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path></svg>
+                        <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&auto=format&fit=crop" alt="Dental Implants" class="service-card-img">
+                        <div class="service-info-wrap">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c-2.28 0-4-1.72-4-4s1.72-4 4-4 4 1.72 4 4-1.72 4-4 4z"></path><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path></svg>
+                            </div>
+                            <h3>Dental Implants</h3>
+                            <p>Permanent, natural-looking tooth replacements seamlessly integrated with your jawbone. Restore function and aesthetics with precision engineering.</p>
                         </div>
-                        <h3>Dental Implants</h3>
-                        <p>Permanent, natural-looking tooth replacements seamlessly integrated with your jawbone. Restore function and aesthetics with precision engineering.</p>
                     </div>
 
                     <div class="service-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800" alt="Invisalign" class="service-card-img">
+                        <div class="service-info-wrap">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                            </div>
+                            <h3>Invisalign Clear Aligners</h3>
+                            <p>A virtually invisible method to straighten your teeth. Custom-molded aligners comfortably shift your teeth into perfect position without metal braces.</p>
                         </div>
-                        <h3>Invisalign Clear Aligners</h3>
-                        <p>A virtually invisible method to straighten your teeth. Custom-molded aligners comfortably shift your teeth into perfect position without metal braces.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Real Patient Results (Before/After) -->
+        <section id="results" class="results">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <h2>Real Patient Results</h2>
+                    <p>Drag to reveal the transformation</p>
+                </div>
+                <div class="sliders-grid reveal">
+                    <div class="slider-card">
+                        <div class="ba-slider">
+                            <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=800" alt="Before" class="ba-before" style="filter: brightness(0.85) sepia(0.4);">
+                            <div class="ba-after-wrapper">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800" alt="After" class="ba-after">
+                            </div>
+                            <div class="ba-handle"></div>
+                            <span class="ba-label left">Before</span>
+                            <span class="ba-label right">After</span>
+                        </div>
+                        <p class="slider-caption">Teeth Whitening — Sarah T., Austin</p>
+                    </div>
+
+                    <div class="slider-card">
+                        <div class="ba-slider">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop" alt="Before" class="ba-before" style="filter: brightness(0.9) sepia(0.2);">
+                            <div class="ba-after-wrapper">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop" alt="After" class="ba-after">
+                            </div>
+                            <div class="ba-handle"></div>
+                            <span class="ba-label left">Before</span>
+                            <span class="ba-label right">After</span>
+                        </div>
+                        <p class="slider-caption">Invisalign — Michael R., Austin</p>
+                    </div>
+
+                    <div class="slider-card">
+                        <div class="ba-slider">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" alt="Before" class="ba-before" style="filter: brightness(0.9) grayscale(0.2);">
+                            <div class="ba-after-wrapper">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" alt="After" class="ba-after">
+                            </div>
+                            <div class="ba-handle"></div>
+                            <span class="ba-label left">Before</span>
+                            <span class="ba-label right">After</span>
+                        </div>
+                        <p class="slider-caption">Dental Implant — Grace L., Austin</p>
                     </div>
                 </div>
             </div>
@@ -135,6 +201,17 @@
                 <div class="section-header reveal">
                     <h2>Patient Stories</h2>
                     <p>Hear from Austin residents who trust our team with their smiles.</p>
+                    <div style="display:flex; justify-content:center; align-items:center; gap:0.5rem; margin-top:1rem;">
+                        <div style="color:#FBBC04; display:flex;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                        <span style="font-weight:600; font-size:1rem; color:var(--primary-color);">4.9 out of 5 — 847 Google Reviews</span>
+                        <a href="#" style="font-size:0.9rem; text-decoration:underline; color:var(--primary-light); margin-left:1rem;">Read Our Reviews on Google</a>
+                    </div>
                 </div>
                 <div class="testimonials-grid reveal">
                     <!-- Testimonial 1 -->
@@ -179,13 +256,7 @@
             </div>
         </section>
 
-        <!-- Insurance Banner -->
-        <section class="insurance-banner reveal">
-            <div class="insurance-container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="insurance-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                <p>We proudly accept most major PPO insurances, including <strong>Delta Dental</strong>, <strong>Cigna</strong>, <strong>MetLife</strong>, and <strong>Aetna</strong>.</p>
-            </div>
-        </section>
+        <!-- Insurance Banner (Moved up) -->
 
         <!-- FAQ Section -->
         <section id="faq" class="faq">
@@ -220,6 +291,24 @@
                         </button>
                         <div class="faq-answer">
                             <p>The cost varies depending on your specific needs and bone density. We provide a completely transparent quote before beginning any procedure and offer flexible financing options.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you offer payment plans?</span>
+                            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer flexible financing through CareCredit with 0% APR for qualified patients.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I prepare for my first visit?</span>
+                            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Simply bring your insurance card and arrive 10 minutes early to complete your new patient forms. We'll handle the rest.</p>
                         </div>
                     </div>
                 </div>
@@ -262,33 +351,106 @@
                     </div>
                 </div>
 
-                <div class="contact-form-wrapper">
-                    <h3>Request an Appointment</h3>
-                    <form class="contact-form">
+                <div class="contact-form-wrapper" id="booking-widget">
+                    <div class="booking-header">
+                        <h3>Request an Appointment</h3>
+                        <div class="booking-progress">
+                            <div class="progress-step active" data-step="1">1</div>
+                            <div class="progress-line"></div>
+                            <div class="progress-step" data-step="2">2</div>
+                            <div class="progress-line"></div>
+                            <div class="progress-step" data-step="3">3</div>
+                            <div class="progress-line"></div>
+                            <div class="progress-step" data-step="4">4</div>
+                        </div>
+                    </div>
+
+                    <!-- Step 1 -->
+                    <div class="booking-step active" id="step1">
+                        <h4>Choose Service</h4>
+                        <div class="service-options">
+                            <div class="service-option" onclick="selectService(this, 'Teeth Whitening')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                                <span>Teeth Whitening</span>
+                            </div>
+                            <div class="service-option" onclick="selectService(this, 'Dental Implants')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c-2.28 0-4-1.72-4-4s1.72-4 4-4 4 1.72 4 4-1.72 4-4 4z"></path><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path></svg>
+                                <span>Dental Implants</span>
+                            </div>
+                            <div class="service-option" onclick="selectService(this, 'Invisalign Clear Aligners')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                                <span>Invisalign Clear Aligners</span>
+                            </div>
+                            <div class="service-option" onclick="selectService(this, 'General Consultation')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                                <span>General Consultation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="booking-step" id="step2" style="display:none;">
+                        <h4>Choose Date & Time</h4>
+                        <div class="calendar-wrapper">
+                            <div class="calendar-header">
+                                <button onclick="changeMonth(-1)">&lt;</button>
+                                <span id="current-month">October 2026</span>
+                                <button onclick="changeMonth(1)">&gt;</button>
+                            </div>
+                            <div class="calendar-grid" id="calendar-grid">
+                                <!-- Calendar days injected by JS -->
+                            </div>
+                        </div>
+                        <div class="time-slots" id="time-slots" style="display:none;">
+                            <div class="time-slot" onclick="selectTime(this)">9:00 AM</div>
+                            <div class="time-slot" onclick="selectTime(this)">10:30 AM</div>
+                            <div class="time-slot" onclick="selectTime(this)">2:00 PM</div>
+                            <div class="time-slot" onclick="selectTime(this)">3:30 PM</div>
+                            <div class="time-slot" onclick="selectTime(this)">5:00 PM</div>
+                        </div>
+                        <button class="btn-primary w-full mt-4" onclick="nextStep(3)" id="btn-step2" disabled style="opacity:0.5; pointer-events:none;">Continue</button>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="booking-step" id="step3" style="display:none;">
+                        <h4>Your Details</h4>
                         <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Jane Doe">
+                            <label>Full Name</label>
+                            <input type="text" id="b-name" placeholder="Jane Doe">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                            <label>Email Address</label>
+                            <input type="email" id="b-email" placeholder="jane@example.com">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="(512) 000-0000">
+                            <label>Phone Number</label>
+                            <input type="tel" id="b-phone" placeholder="(512) 000-0000">
                         </div>
                         <div class="form-group">
-                            <label for="service">Reason for Visit</label>
-                            <select id="service" name="service">
-                                <option>General Consultation</option>
-                                <option>Teeth Whitening</option>
-                                <option>Dental Implants</option>
-                                <option>Invisalign</option>
-                                <option>Other</option>
+                            <label>Insurance Provider</label>
+                            <select id="b-insurance">
+                                <option>Delta Dental</option><option>Cigna</option><option>MetLife</option><option>Aetna</option><option>Other</option><option>No Insurance</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn-primary w-full clamp-cta">Book Appointment</button>
-                    </form>
+                        <div class="form-group">
+                            <label>Notes (Optional)</label>
+                            <textarea id="b-notes" rows="2" placeholder="Any specific concerns?" style="width:100%; padding:0.875rem; border:1px solid var(--border-subtle); border-radius:var(--radius-md); font-family:inherit;"></textarea>
+                        </div>
+                        <button class="btn-primary w-full mt-4" onclick="submitBooking()">Confirm Appointment</button>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="booking-step" id="step4" style="display:none; text-align:center;">
+                        <div class="success-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="64" height="64"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <h4>Appointment Confirmed!</h4>
+                        <div class="booking-summary">
+                            <p><strong>Service:</strong> <span id="sum-service"></span></p>
+                            <p><strong>Date & Time:</strong> <span id="sum-datetime"></span></p>
+                        </div>
+                        <button class="btn-primary w-full mt-4" style="background:#fff; color:var(--primary-color); border:2px solid var(--border-subtle);" onclick="alert('Added to Google Calendar!')">Add to Google Calendar</button>
+                    </div>
                 </div>
             </div>
         </section>
